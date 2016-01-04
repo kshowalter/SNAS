@@ -1,0 +1,23 @@
+{
+  "name": "wap",
+  "version": "0.0.0",
+  "description": "Webapp Assembly Guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kshowalter/Webapp-Assembly-Guide.git"
+  },
+  "keywords": [
+    "instructions",
+    "guide",
+    "webapp"
+  ],
+  "author": "Keith Showalter",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/kshowalter/Webapp-Assembly-Guide/issues"
+  }
+}
