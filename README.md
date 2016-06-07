@@ -1,4 +1,4 @@
-# Webapp Assembly Guide
+# Web Application Structure
 
 A guide to creating a modern web application
 

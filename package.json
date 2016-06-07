@@ -1,7 +1,7 @@
 {
-  "name": "wap",
+  "name": "was",
   "version": "0.0.0",
-  "description": "Webapp Assembly Guide",
+  "description": "Web Application Structure",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
