@@ -17,7 +17,7 @@ module.exports = {
       {
         test: /\.js$/,
         //exclude: /node_modules/,
-        include: /client/,
+        include: /docs/,
         loader: 'babel-loader',
         query: {
           // https://github.com/babel/babel-loader#options
