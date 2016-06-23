@@ -7,7 +7,7 @@ module.exports = function(state, action){
 
 
   if( action.type === 'selectPage'){
-    state.ui.selectedSubject = action.subjectID;
+    state.selectedPage = action.pageName;
   }
 
   return state;

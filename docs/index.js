@@ -1,7 +1,8 @@
 console.log('script loaded');
 
 import _ from 'lodash';
-import redux from 'redux';
+
+var redux = require('redux');
 
 import SpecDOM  from 'specdom';
 
@@ -10,6 +11,7 @@ import reducer from './reducer';
 import Router from './router';
 import Actions from './actions';
 
+console.log(redux);
 var createStore = redux.createStore;
 
 var initState = {
@@ -21,7 +23,11 @@ var initState = {
 
 var store = createStore(reducer, initState);
 var actions = Actions(store);
-var router = Router(actions);
+
+if( location.hash === '' || location.hash === '#' ){
+  location.hash = '/' + initState.selectedPage;
+}
+Router(actions);
 
 window.onload = function(){
   console.log('page loaded');
@@ -32,11 +38,12 @@ window.onload = function(){
     var state = store.getState();
 
     //window.state = state; // DEVMODE
-    //console.log('State change: ', state);
+    console.log('State change: ', state);
 
-    sessionStorage.setItem('selectedSubject', state.ui.selectedSubject);
+    //sessionStorage.setItem('selectedSubject', state.selectedSubject);
 
     var page = state.pages[state.selectedPage];
+    console.log(page)
     specdom.load(page);
   });
 
