@@ -26,7 +26,8 @@
     "svgize": "git+https://github.com/kshowalter/svgize.git",
     "chart_maker": "git+https://github.com/kshowalter/chart_maker.git",
     "specdom_to_sgml": "git+https://github.com/kshowalter/specDOM_to_SGML.git",
-    "lodash": "^4.11.2"
+    "lodash": "^4.11.2",
+    "redux": "~3.5.2"
   },
   "devDependencies": {
     "babel-eslint": "latest",
