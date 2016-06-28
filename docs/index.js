@@ -1,5 +1,3 @@
-console.log('script loaded');
-
 import _ from 'lodash';
 
 var redux = require('redux');
@@ -11,7 +9,6 @@ import reducer from './reducer';
 import Router from './router';
 import Actions from './actions';
 
-console.log(redux);
 var createStore = redux.createStore;
 
 var initState = {
@@ -43,7 +40,6 @@ window.onload = function(){
     //sessionStorage.setItem('selectedSubject', state.selectedSubject);
 
     var page = state.pages[state.selectedPage];
-    console.log(page)
     specdom.load(page);
   });
 
