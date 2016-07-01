@@ -4,17 +4,21 @@ var redux = require('redux');
 
 import SpecDOM  from 'specdom';
 
-import page_main from './page/main';
 import reducer from './reducer';
 import Router from './router';
 import Actions from './actions';
+
+import page_content from './content';
+import page_about from './page/about';
+import page_structure from './page/structure';
 
 var createStore = redux.createStore;
 
 var initState = {
   selectedPage: 'main',
   pages: {
-    main: page_main()
+    about: page_about(),
+    structure: page_structure()
   }
 };
 
@@ -39,7 +43,8 @@ window.onload = function(){
 
     //sessionStorage.setItem('selectedSubject', state.selectedSubject);
 
-    var page = state.pages[state.selectedPage];
+    var subject = state.pages[state.selectedPage];
+    var page = page_content(subject);
     specdom.load(page);
   });
 

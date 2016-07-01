@@ -1,4 +1,6 @@
-import illustration_main from './illustration/main';
+import {div, span, a, ul, li} from 'specdom_helper';
+
+import illustration_structure from './illustration/structure';
 
 module.exports = function(){
 
@@ -9,7 +11,7 @@ module.exports = function(){
     },
     children: [
       {
-        tag: 'span',
+        tag: 'div',
         props: {},
         children: [
           'List of ',
@@ -22,7 +24,13 @@ module.exports = function(){
           }
         ]
       },
-      illustration_main()
+      {
+        tag: 'div',
+        props: {},
+        children: [
+          illustration_structure()
+        ]
+      }
     ]
   };
 
