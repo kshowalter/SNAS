@@ -7,8 +7,8 @@ import page_structure from './structure';
 export default {
   pages: {
     about: page_about,
-    structure: page_structure,
-  }
+    structure: page_structure
+  },
 
   toc: function(subject){
     var config = div({class:'page'}, [

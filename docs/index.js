@@ -2,14 +2,13 @@ import _ from 'lodash';
 
 var redux = require('redux');
 
-import SpecDOM  from 'specdom';
 
 import reducer from './reducer';
 import Router from './router';
 import Actions from './actions';
 
 import content from './content';
-
+import View from './View';
 
 var createStore = redux.createStore;
 
@@ -29,7 +28,7 @@ Router(actions);
 window.onload = function(){
   console.log('page loaded');
 
-  var specdom = SpecDOM('#content');
+  var view = View('#content');
 
   store.subscribe(function(){
     var state = store.getState();
@@ -41,7 +40,8 @@ window.onload = function(){
 
     var subject = state.pages[state.selectedPage];
     var page = page_content(subject);
-    specdom.load(page);
+    
+    view.load(page);
   });
 
 
