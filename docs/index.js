@@ -8,18 +8,14 @@ import reducer from './reducer';
 import Router from './router';
 import Actions from './actions';
 
-import page_content from './content';
-import page_about from './page/about';
-import page_structure from './page/structure';
+import content from './content';
+
 
 var createStore = redux.createStore;
 
 var initState = {
   selectedPage: 'main',
-  pages: {
-    about: page_about(),
-    structure: page_structure()
-  }
+  pages: content.pages
 };
 
 var store = createStore(reducer, initState);
