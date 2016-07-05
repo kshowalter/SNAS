@@ -1,4 +1,4 @@
-import {div, span, a, ul, li} from 'specdom_helper';
+import {div, span, a, ul, li, br, h1, h2, h3} from 'specdom_helper';
 
 import illustration_structure from './illustration/structure';
 
