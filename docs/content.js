@@ -1,37 +1,13 @@
 import {div, span, a, ul, li, br, h1, h2, h3} from 'specdom_helper';
 
-import page_about from './about';
-import page_structure from './structure';
-
+import toc from './page/toc';
 
 export default {
-  pages: {
-    about: page_about,
-    structure: page_structure
-  },
+  mk: function(state){
+    var subject = state.pages[state.selectedPage];
 
-  toc: function(subject){
-    var config = div({class:'page'}, [
-      div({class:'content'}, [
-        h2('WAS'),
-        br(),
-        ul([
-          li([
-            a('About', '#/about')
-          ]),
-          li([
-            a('Structure', '#/structure')
-          ])
-        ])
-      ]),
-      div({class:'subject'}, [
-        subject
-      ])
-    ]);
+    var page = toc(subject());
 
-    console.log(config);
-
-    return config;
+    return page;
   }
-
 };
