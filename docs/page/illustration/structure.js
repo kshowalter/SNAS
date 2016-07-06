@@ -11,8 +11,8 @@ module.exports = function(){
   });
 
 
-  var col = _.range(-50,1000,200);
-  var row = _.range(0,2000,100);
+  var col = _.range(0,1000,125);
+  var row = _.range(0,2000,125);
 
   plot.addPoint( { name:'initial_state',  x:col[2], y:row[1], type: 'api' } );
   plot.addPoint( { name:'state',  x:col[1], y:row[2], type: 'api' } );
@@ -54,6 +54,8 @@ module.exports = function(){
   plot.cDown('user_action','action');
   plot.cDown('action','action_handler');
   plot.cDown('action_handler','state');
+
+  plot.cDown('specdom_helper','view_maker');
 
   plot.cDown('user_action','network_request');
   plot.cDown('network_event','action');
