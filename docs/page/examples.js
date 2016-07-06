@@ -7,7 +7,9 @@ module.exports = function(){
   var specs = div({class:'notice'}, [
     div([
       span('Example with redux/flux like structure.'),
-      example1(),
+      div([
+        example1()
+      ]),
       div('Redux is JS library inspired by Flux, Elm and Om. Both Flux and Elm are inspired by event sourcing.')
     ])
   ]);

@@ -11,8 +11,6 @@ module.exports = function(){
     },
     children: [
       div([
-        'List of ',
-        a('repositories', 'https://github.com/kshowalter?tab=repositories')
 
       ]),
       div([
