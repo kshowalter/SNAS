@@ -10,27 +10,14 @@ module.exports = function(){
       class: 'notice'
     },
     children: [
-      {
-        tag: 'div',
-        props: {},
-        children: [
-          'List of ',
-          {
-            tag: 'a',
-            props: {
-              href: 'https://github.com/kshowalter?tab=repositories'
-            },
-            text: 'repositories'
-          }
-        ]
-      },
-      {
-        tag: 'div',
-        props: {},
-        children: [
-          illustration_structure()
-        ]
-      }
+      div([
+        'List of ',
+        a('repositories', 'https://github.com/kshowalter?tab=repositories')
+
+      ]),
+      div([
+        illustration_structure()
+      ])
     ]
   };
 
