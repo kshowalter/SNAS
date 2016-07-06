@@ -1,4 +1,7 @@
 import content from '../content';
+import pages from '../page/pages';
+
+var pageNames = Object.keys(pages);
 
 module.exports = function(state, action){
   if( action.type === 'init'){
@@ -8,11 +11,24 @@ module.exports = function(state, action){
 
 
   if( action.type === 'selectPage'){
-    state.selectedPage = action.pageName;
+    if( action.pageName !== '' ){
+      var pageNameArray = action.pageName.split('/');
 
-    //var subject = state.pages[state.selectedPage];
+      if( pageNames.indexOf(pageNameArray[0])+1 ){
+        state.selectedPage = action.pageName;
+      } else if( pageNameArray[0] === 'illustration' ){
+        console.log('TODO: set illustration output');
+        //var htmlroot = document.getElementsByTagName('html')[0]
+        //htmlroot.parentNode.replaceChild( svg, htmlroot)
+        state.selectedPage = 'unknown';
+      } else {
+        state.selectedPage = 'unknown';
+      }
+    } else {
+      state.selectedPage = state.defaultPage;
+    }
+
     state.pageSpec = content.mk(state);
-
 
 
   }

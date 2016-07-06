@@ -1,10 +1,12 @@
 export default function(actions){
 
   function router(actions) {
-    var url = location.hash.slice(2) || '/';
-    var values = url.split('/');
+    var request = location.hash.slice(2) || '';
 
-    actions.selectPage(values[0]);
+    //var values = request.split('/');
+    //actions.selectPage(values[0]);
+
+    actions.selectPage(request);
 
   }
 

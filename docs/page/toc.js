@@ -4,6 +4,8 @@ import _ from 'lodash';
 
 import pages from './pages';
 var pageArray = Object.keys(pages);
+pageArray = _.pull(pageArray, 'unknown');
+
 
 export default function(subjectSpec){
 
