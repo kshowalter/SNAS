@@ -10,7 +10,7 @@ import Store from './store/store';
 import Actions from './store/actions';
 
 
-import initState from './initState';
+import initState from './store/initState';
 var store = Store(initState);
 var actions = Actions(store);
 

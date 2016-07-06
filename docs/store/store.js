@@ -1,6 +1,6 @@
 import reducer from './reducer';
 
-import initState from '../initState';
+import initState from './initState';
 
 var redux = require('redux');
 
