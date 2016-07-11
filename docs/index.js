@@ -9,7 +9,6 @@ import View from './View';
 import Store from './store/store';
 import Actions from './store/actions';
 
-
 import initState from './store/initState';
 var store = Store(initState);
 var actions = Actions(store);

@@ -55,7 +55,7 @@ module.exports = function(){
   plot.cDown('action','action_handler');
   plot.cDown('action_handler','state');
 
-  plot.cDown('specdom_helper','view_maker');
+  plot.cSide('specdom_helper','view_maker', {flow:'both'});
 
   plot.cDown('user_action','network_request');
   plot.cDown('network_event','action');

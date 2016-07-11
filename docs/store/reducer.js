@@ -9,28 +9,18 @@ module.exports = function(state, action){
     return state;
   }
 
-
   if( action.type === 'selectPage'){
     if( action.pageName !== '' ){
       var pageNameArray = action.pageName.split('/');
-
       if( pageNames.indexOf(pageNameArray[0])+1 ){
         state.selectedPage = action.pageName;
-      } else if( pageNameArray[0] === 'illustration' ){
-        console.log('TODO: set illustration output');
-        //var htmlroot = document.getElementsByTagName('html')[0]
-        //htmlroot.parentNode.replaceChild( svg, htmlroot)
-        state.selectedPage = 'unknown';
       } else {
         state.selectedPage = 'unknown';
       }
     } else {
       state.selectedPage = state.defaultPage;
     }
-
     state.pageSpec = content.mk(state);
-
-
   }
 
   return state;
