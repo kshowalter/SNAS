@@ -4,9 +4,11 @@ Defines standardized connection points within a application that will encourage 
 
 ## Description
 
-All primary variable data is stored in the state. The state is held in a [state manager](https://gist.github.com/kshowalter/94f80a8c54bf1133e82d7a28b0de4778).
+All primary variable data is stored in the state. The state is held in a [state manager](https://github.com/kshowalter/Webapp-Assembly-Guide/blob/master/docs/state_management.md).
 Some variables that are dependent on the primary data may be stored outside of the state.
 These variables should mostly be related to UI rendering.
+
+aka [state manager](docs/state_management.md)
 
 Changes to the state should be defined in a standardized object like an [action](http://redux.js.org/docs/basics/Actions.html) in Redux.
 A [state manager](https://gist.github.com/kshowalter/94f80a8c54bf1133e82d7a28b0de4778) function is called to apply the action to the state.
