@@ -8,7 +8,7 @@ Connecting [functions] with {APIs}
 
 * \[view\]
 * {[specDOM API](https://github.com/kshowalter/specDOM_API)}
-* \[[state manager](https://gist.github.com/kshowalter/94f80a8c54bf1133e82d7a28b0de4778)\]
+* \[[State management](docs/state_management.md)\]
 * {[Client-Server communication](docs/client-server.md)}: User management, Data transmission to and from database
 * \[[Server](docs/server.md)\]: Serve files or templates, User management, Database management
 * {general database API?}
