@@ -1,14 +1,14 @@
 {
-  "name": "was",
-  "version": "0.0.0",
-  "description": "Web Application Structure",
+  "name": "snas",
+  "version": "0.1.0",
+  "description": "Standardized Node Application Structure",
   "main": "index.js",
   "scripts": {
-    "serve": "webpack-dev-server --port 2323 --content-base public/ --inline --hot -d"
+    "serve": ""
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kshowalter/Webapp-Assembly-Guide.git"
+    "url": "https://github.com/kshowalter/SNAS.git"
   },
   "keywords": [
     "instructions",
@@ -18,6 +18,6 @@
   "author": "Keith Showalter",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/kshowalter/Webapp-Assembly-Guide/issues"
+    "url": "https://github.com/kshowalter/SNAS/issues"
   },
 }

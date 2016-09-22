@@ -1,7 +1,6 @@
-# Web Application Structure
+# Standardized Node Application Structure
 
 Defines standardized connection points within a application that will encourage interchangeable modules.
-
 
 ## Structure
 Connecting [functions] with {APIs}
@@ -22,8 +21,9 @@ These are modules that help create the standard config objects.
   * [kstore](https://github.com/kshowalter/kstore): A simple indexed table storage object.
 * View creator
   * [specDOM_helper](https://github.com/kshowalter/specDOM_helper)
-* Illustrations
+* Illustration Makers
   * [Geometery](https://github.com/kshowalter/GeometryAPI)
+  * [A chart maker](https://github.com/kshowalter/chart_maker)
 * View renderer
   * [ConfigDOM](https://github.com/kshowalter/configdom): elementConfig --> DOM
   * [SimpleDOM](https://github.com/kshowalter/SimpleDOM): A basic DOM manipulation (similar to Jquery)
