@@ -20,24 +20,4 @@
   "bugs": {
     "url": "https://github.com/kshowalter/Webapp-Assembly-Guide/issues"
   },
-  "dependencies": {
-    "specdom": "git+https://github.com/kshowalter/specdom.git",
-    "mkdrawing": "git+https://github.com/kshowalter/mkDrawing.git",
-    "svgize": "git+https://github.com/kshowalter/svgize.git",
-    "chart_maker": "git+https://github.com/kshowalter/chart_maker.git",
-    "specdom_to_sgml": "git+https://github.com/kshowalter/specDOM_to_SGML.git",
-    "specdom_helper": "git+https://github.com/kshowalter/specDOM_helper.git",
-    "lodash": "^4.11.2",
-    "redux": "~3.5.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "latest",
-    "eslint": "latest",
-    "eslint-plugin-react": "latest",
-    "babel-core": "latest",
-    "babel-loader": "latest",
-    "babel-preset-es2015": "latest",
-    "webpack": "latest",
-    "webpack-dev-server": "latest"
-  }
 }
