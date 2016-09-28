@@ -21,7 +21,7 @@ Options:
 
 On client the user enters their username and password. The password is converted to a hash. The username and password hash are transmitted to the server as is?
 
-The server creates a token and sends this to the client.
+The server creates a [token](./tokens.md) and sends this to the client.
 
 The client saves this token in local storage to send with each request.
 
